@@ -14,8 +14,7 @@ Imports:
     mclust,
     ggplot2,
     qvalue,
-    survival,
-    matrixStats
+    survival
 LazyData: true
 Depends: R (>= 3.3.0), Biobase, survival, ggpubr, mclust, qvalue
 VignetteBuilder: knitr

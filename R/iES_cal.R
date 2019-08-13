@@ -33,6 +33,14 @@ GSEA = function(gene_list, gene_set, stats_vector){
     return(ES)
 }
 
+#' iES calculation Function
+#'
+#' This function allows you to express your love of cats.
+#' @param Y is the expression matrix, GSDB is the gene set database
+#' @keywords iES statistics calculatioin
+#' @export
+#' @examples
+#' iES_cal()
 
 iES_cal = function(Y, GSDB){
     if (is(Y, "ExpressionSet")){

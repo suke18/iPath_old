@@ -1,4 +1,14 @@
 ########## survival analysis for two groups ##########
+
+#' iES calculation Function
+#'
+#' This function allows you to express your love of cats.
+#' @param GSDB,iES_mat is the gene set database and iES_mat with tumor and normal
+#' @keywords iPath survival analysis for two groups of patients: perturbed and normal-like
+#' @export
+#' @examples
+#' iES_surv()
+
 iES_surv = function(GSDB, iES_mat, cli, gs_thre = 500, samp_thre=9, qval = T){
     gs_lens = sapply(1:length(GSDB$geneset.names), function(i) length(GSDB$genesets[[i]]))
     gs_ids = which(gs_lens < gs_thre)

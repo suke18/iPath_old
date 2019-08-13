@@ -1,4 +1,14 @@
 ########## The main demonstration plots #############
+
+#' water fall plot
+#'
+#' This function allows you to express your love of cats.
+#' @param iES_mat,gs_str is the iES_mat with tumor and normal and gs name
+#' @keywords waterfall plot for normal and tumor sample
+#' @export
+#' @examples
+#' water_fall()
+
 water_fall = function(iES_mat, gs_str, title = T){
     group_colors = c(tumor = "Brown", normal = "#56B4E9")
     gs_ind = which(rownames(iES_mat[[1]]) == gs_str)
@@ -25,6 +35,14 @@ water_fall = function(iES_mat, gs_str, title = T){
     return(p)
 }
 
+#' density fall plot
+#'
+#' This function allows you to express your love of cats.
+#' @param iES_mat,gs_str is the iES_mat with tumor and normal and gs name
+#' @keywords densityfall plot for normal and tumor sample
+#' @export
+#' @examples
+#' density_fall()
 
 density_fall = function(iES_mat, gs_str, title = T){
     gs_ind = which(rownames(iES_mat[[1]]) == gs_str)
@@ -52,8 +70,16 @@ density_fall = function(iES_mat, gs_str, title = T){
 }
 
 
-## One survival plot
-surv_one = function(GSDB, iES_mat, cli, gs_str, samp_thre=9, title = T){
+#' iES survival for one pathway
+#'
+#' This function allows you to express your love of cats.
+#' @param GSDB,iES_mat,gs_str is the GSDB iES_mat with tumor and normal and gs name
+#' @keywords densityfall plot for normal and tumor sample
+#' @export
+#' @examples
+#' density_fall()
+#'
+iES_surv_one = function(GSDB, iES_mat, cli, gs_str, samp_thre=9, title = T){
     data1 = iES_mat$normal_patients; data2 = iES_mat$tumor_patients
     rem_ids = as.vector(which(unlist(apply(data1, 1, sd))!=0))
     tum_samps = Reduce(intersect, list(colnames(iES_mat$tumor_patients), cli$bcr_patient_barcode))
