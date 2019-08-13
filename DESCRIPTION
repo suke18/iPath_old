@@ -1,0 +1,22 @@
+Package: iPath
+Type: Package
+Title: iPath algorithm for pathway perturbation detections
+Version: 0.1.0
+Author: Kenong Su, Steve Qin
+Maintainer: The package maintainer <kenong.su@emory.edu>
+Description: 
+License: GPL-2
+Encoding: UTF-8
+Imports:
+    Biobase,
+    xbioc,
+    ggpubr,
+    mclust,
+    ggplot2,
+    qvalue,
+    survival,
+    matrixStats
+LazyData: true
+Depends: R (>= 3.3.0), Biobase, survival, ggpubr, mclust, qvalue
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
