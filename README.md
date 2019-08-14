@@ -31,20 +31,20 @@ iPath_rslt = iES_surv(GSDB = GSDB_example, iES_mat = iES_mat,cli = BRCA_cli, qva
 **(4). Demonstration Figures**
 ```r
 gs_str = "FARMER_BREAST_CANCER_APOCRINE_VS_LUMINAL"
-water_fall(iES_mat = iES_mat, gs_str = gs_str) # waterfall plot for tumor and normal patients iES scores
-density_fall(iES_mat = iES_mat, gs_str = gs_str) # densityfall plot for tumor and normal patients iES scores
-iES_surv_one(GSDB_example, iES_mat, BRCA_cli, gs_str = gs_str) # one case of the survival analysis
+water_fall(iES_mat = iES_mat, gs_str = gs_str)
+density_fall(iES_mat = iES_mat, gs_str = gs_str)
+iES_surv_one(GSDB_example, iES_mat, BRCA_cli, gs_str = gs_str)
 ```
 
 ### 2. Plots Illustration
 **(1). waterfall plot**
 
-It contains the iES scores for tumor and normal samples.
+For a specific pathway, iPath draws the waterfall plot which contains the iES scores for tumor and normal samples. The tSNE plot of iES score for the *C2* GSDB from *MSigDB* across these 14 cancer types is illustrated in (`Fig.c`). 
 ![waterfall](/assets/Waterfall.jpeg)
 
 **(2). densityfall plot**
 
-It is the density plots of the iES scores for tumor and normal samples. Because of the heterogeneity also wildly exists in normal samples from TCGA, iPath considers a mixture model fitting into normal samples.
+For a specific pathway, iPath draws the density plots of the iES scores for tumor and normal samples. Because of the heterogeneity also wildly exists in normal samples from TCGA, iPath considers a mixture model fitting into normal samples.
 ![densityfall](/assets/densityfall.jpeg)
 
 **(3). survival plot**
