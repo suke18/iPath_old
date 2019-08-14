@@ -37,18 +37,17 @@ iES_surv_one(GSDB_example, iES_mat, BRCA_cli, gs_str = gs_str)
 ```
 
 ### 2. Plots Illustration
-**(1). waterfall plot**
-
+**(1). waterfall plot** <br/>
 For a specific pathway, iPath draws the waterfall plot which contains the iES scores for tumor and normal samples. The tSNE plot of iES score for the *C2* GSDB from *MSigDB* across these 14 cancer types is illustrated in (`Fig.c`).
+
 ![waterfall](/assets/Waterfall.jpeg)
 
-**(2). densityfall plot**
-
+**(2). densityfall plot**<br/>
 For a specific pathway, iPath draws the density plots of the iES scores for tumor and normal samples. Because of the heterogeneity also wildly exists in normal samples from TCGA, iPath considers a mixture model fitting into normal samples.
+
 ![densityfall](/assets/densityfall.jpeg)
 
-**(3). survival plot**
-
+**(3). survival plot**<br/>
 After classifying tumor samples into two groups: normal-like and perturbed, iPath performs the survival anlaysis based on the two groups.
 
 ![survivalone](/assets/Survival.jpeg)
