@@ -15,7 +15,7 @@ water_fall = function(iES_mat, gs_str, title = T){
     normal = iES_mat[[1]][gs_ind,]; tumor = iES_mat[[2]][gs_ind, ]
 
     n_gap = round((length(tumor) + length(normal)) * 0.01)
-    tmp_iES_mat = iES_mat.frame(value = c(tumor[order(tumor)], rep(0, n_gap), normal[order(normal)]),
+    tmp_iES_mat = data.frame(value = c(tumor[order(tumor)], rep(0, n_gap), normal[order(normal)]),
                           type = c(rep("tumor", length(tumor)), rep("tumor", n_gap), rep("normal", length(normal))),
                           fill = c(rep("fill", length(tumor)), rep(NA, n_gap), rep("fill", length(normal))))
     if (title ==T){
@@ -50,7 +50,7 @@ density_fall = function(iES_mat, gs_str, title = T){
     tmp_m = Mclust(normal, parameter = T, modelNames = "V")
     id = which.max(tmp_m$parameters$pro)
     tmp_mean = tmp_m$parameters$mean[id]
-    tmp_iES_mat = iES_mat.frame(value = c(normal, tumor),
+    tmp_iES_mat = data.frame(value = c(normal, tumor),
                           type = c(rep("normal", length(normal)), rep("tumor", length(tumor))))
     if (title ==T){
         p = ggdensity(tmp_iES_mat, x = "value",rug = TRUE,
