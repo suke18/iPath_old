@@ -50,4 +50,5 @@ It is the density plots of the iES scores for tumor and normal samples. Because 
 **(3). survival plot**
 
 After classifying tumor samples into two groups: normal-like and perturbed, iPath performs the survival anlaysis based on the two groups.
+
 ![survivalone](/assets/Survival.jpeg)
