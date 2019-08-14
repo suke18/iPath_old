@@ -1,7 +1,8 @@
-<center> <h1> iPath </h1> </center>
-#### Comprehensive pan-cancer analysis of the transcription of pre-defined gene sets at the individual level reveals novel biomarkers that links to clinical prognosis. **iPath** is an R package designated for the implementation of iPath algorithm, which is used to selected significiant pathways. These significant pathways demonstrate survival difference in survival for *TCGA* data (14 cancer types `Fig.a`). A schemetic overview of the glorithm is shown in (`Fig.b`). All the copyrights are explaned by Kenong Su <kenong.su@emory.edu> and Dr. Zhaohui (Steve) Qin <zhaohui.qin@emory.edu>.
-![workflow](/assets/Fig.png)
+<center> <h4> iPath </h4> </center>
 -------------------
+Comprehensive pan-cancer analysis of the transcription of pre-defined gene sets at the individual level reveals novel biomarkers that links to clinical prognosis. **iPath** is an R package designated for the implementation of iPath algorithm, which is used to selected significiant pathways. These significant pathways demonstrate survival difference in survival for *TCGA* data (14 cancer types `Fig.a`). A schemetic overview of the glorithm is shown in (`Fig.b`). All the copyrights are explaned by Kenong Su <kenong.su@emory.edu> and Dr. Zhaohui (Steve) Qin <zhaohui.qin@emory.edu>.
+
+![workflow](/assets/Fig.png)
 
 ### 1. Software Installation
 ```
@@ -26,7 +27,7 @@ iES_mat = iES_cal(Y, GSDB = GSDB_example)
 ```r
 iPath_rslt = iES_surv(GSDB = GSDB_example, iES_mat = iES_mat,cli = BRCA_cli, qval=F)
 ```
-**## 3. Demonstration Figures**
+**(4). Demonstration Figures**
 ```r
 gs_str = "FARMER_BREAST_CANCER_APOCRINE_VS_LUMINAL"
 water_fall(iES_mat = iES_mat, gs_str = gs_str) # waterfall plot for tumor and normal patients iES scores
