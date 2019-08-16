@@ -9,13 +9,14 @@ License: GPL-2
 Encoding: UTF-8
 Imports:
     Biobase,
-    xbioc,
+    matrixStats,
+    survminer,
     ggpubr,
     mclust,
     ggplot2,
     qvalue,
     survival
 LazyData: true
-Depends: R (>= 3.3.0), Biobase, survival, ggpubr, mclust, qvalue
+Depends: R (>= 3.3.0), Biobase, survival, ggpubr, mclust, qvalue, matrixStats,survminer
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1

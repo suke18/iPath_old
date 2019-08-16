@@ -2,7 +2,7 @@
 
 rem_data = function(x){
     rem_ids = which(apply(x, 1, sd) == 0)
-    if (is_empty(rem_ids)){
+    if (length(rem_ids) == 0){
         return(x)
     }else{
         return(x[-rem_ids, ])
@@ -43,16 +43,10 @@ GSEA = function(gene_list, gene_set, stats_vector){
 #' iES_cal()
 
 iES_cal = function(Y, GSDB){
-    if (is(Y, "ExpressionSet")){
-        pheno = phenoData(Y)
-        n_index = which(pheno$phenotypes == "normal")
-        t_index = which(pheno$phenotypes == "tumor")
-        Y = exprs(Y)
-    }else{Y = as.matrix(Y)
-        n_index = which(substr(colnames(Y),14,14) == "1")
-        t_index = which(substr(colnames(Y),14,14) == "0")
-        colnames(Y) = f_colnames(colnames(Y))
-    }
+    Y = as.matrix(Y)
+    n_index = which(substr(colnames(Y),14,14) == "1")
+    t_index = which(substr(colnames(Y),14,14) == "0")
+    colnames(Y) = f_colnames(colnames(Y))
     Y = rem_data(Y)
     row_mean = rowMeans(Y)
     row_sd = rowSds(Y)
