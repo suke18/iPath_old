@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1565983062351.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3214939997",
+    "id" : "7D5F8759",
+    "lastKnownWriteTime" : 1565983099,
+    "last_content_update" : 1565983099799,
+    "path" : "~/Documents/Github/iPath/R/iES_cal.R",
+    "project_path" : "R/iES_cal.R",
+    "properties" : {
+        "cursorPosition" : "43,0",
+        "scrollLine" : "24"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
