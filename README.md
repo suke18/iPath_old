@@ -6,6 +6,10 @@ Comprehensive pan-cancer analysis of the transcription of pre-defined gene sets 
 ![workflow](/assets/Fig.png)
 
 ### 1. Software Installation
+* Version 0.1.0 released
+    + dependent bioconductor packages: Biobase (2.42.0), qvalue(2.14.1)
+    + It can work on Windows, Mac and Linux platforms
+
 ```
 library(devtools)
 install_github("suke18/iPath")
