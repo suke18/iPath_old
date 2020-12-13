@@ -10,7 +10,7 @@ iES_surv(GSDB, iES_mat, cli, gs_thre = 500, samp_thre = 9, qval = T)
 \item{GSDB, iES_mat}{is the gene set database and iES_mat with tumor and normal}
 }
 \description{
-This function allows you to express your love of cats.
+This function allows to investigate on one specific pathway.
 }
 \examples{
 iES_surv()

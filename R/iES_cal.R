@@ -1,14 +1,30 @@
 ########## iES score matrix calculation ##########
 
-rem_data = function(x){
-    rem_ids = which(apply(x, 1, sd) == 0)
+#' remove genes with 0 sd
+#'
+#' This function helps remove non-informative genes.
+#' @param Y is the expression matrix.
+#' @export
+
+rem_data = function(Y){
+    rem_ids = which(apply(Y, 1, sd) == 0)
     if (length(rem_ids) == 0){
-        return(x)
+        return(Y)
     }else{
-        return(x[-rem_ids, ])
+        return(Y[-rem_ids, ])
     }
 }
+
 f_colnames = function(x) gsub("\\.","-",substr(x,1,12))
+
+
+#' GSEA calculation
+#'
+#' This function calculates the GSEA enrichment score.
+#' @param gene_list is a list of genes.
+#' @param gene_set is a set of genes.
+#' @param stats_vector a vector quantify the level of genes in the gene list.
+#' @export
 
 GSEA = function(gene_list, gene_set, stats_vector){
     # Input genelist must be ordered.

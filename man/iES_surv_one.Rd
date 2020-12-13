@@ -2,7 +2,7 @@
 % Please edit documentation in R/iES_plots.R
 \name{iES_surv_one}
 \alias{iES_surv_one}
-\title{iES survival for one pathway}
+\title{iES survival for a certain pathway}
 \usage{
 iES_surv_one(GSDB, iES_mat, cli, gs_str, samp_thre = 9, title = T)
 }

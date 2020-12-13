@@ -2,7 +2,7 @@
 
 #' iES calculation Function
 #'
-#' This function allows you to express your love of cats.
+#' This function allows to investigate on one specific pathway.
 #' @param GSDB,iES_mat is the gene set database and iES_mat with tumor and normal
 #' @keywords iPath survival analysis for two groups of patients: perturbed and normal-like
 #' @export

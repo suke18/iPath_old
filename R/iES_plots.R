@@ -70,7 +70,7 @@ density_fall = function(iES_mat, gs_str, title = T){
 }
 
 
-#' iES survival for one pathway
+#' iES survival for a certain pathway
 #'
 #' This function allows you to express your love of cats.
 #' @param GSDB,iES_mat,gs_str is the GSDB iES_mat with tumor and normal and gs name
