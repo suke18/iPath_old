@@ -1,7 +1,7 @@
 <center> <h3> iPath </h3> </center>
 
 -------------------
-Comprehensive pan-cancer analysis of the transcription of pre-defined gene sets at the individual level reveals novel biomarkers that links to clinical prognosis. **iPath** is an R package designated for the implementation of iPath algorithm, which is used to selected significiant pathways. These significant pathways demonstrate survival difference in survival for *TCGA* data (14 cancer types `Fig.a`). A schemetic overview of the glorithm is shown in (`Fig.b`). All the copyrights are explained by Kenong Su <kenong.su@emory.edu> and Dr. Zhaohui (Steve) Qin <zhaohui.qin@emory.edu>.
+Comprehensive pan-cancer analysis of the transcription of pre-defined gene sets at the individual level reveals novel biomarkers that links to clinical prognosis. **iPath** is an R package designated for the implementation of iPath algorithm, which is used to selected significiant pathways. These significant pathways demonstrate survival difference in survival for *TCGA* data (14 cancer types `Fig.a`). A schemetic overview of the glorithm is shown in (`Fig.b`). All the copyrights are explained by Kenong Su <kenong.su@emory.edu> and Prof. Zhaohui (Steve) Qin <zhaohui.qin@emory.edu>.
 
 ![workflow](/assets/Fig.png)
 
