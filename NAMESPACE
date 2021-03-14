@@ -3,6 +3,7 @@
 export(GSEA)
 export(density_fall)
 export(iES_cal)
+export(iES_cal_2)
 export(iES_surv)
 export(iES_surv_one)
 export(rem_data)
